@@ -58,6 +58,7 @@ def login():
     return render_template('login.html', form=form)
 
 
+
 @app.route('/logout')
 def logout():
     logout_user()

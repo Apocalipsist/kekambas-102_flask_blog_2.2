@@ -22,5 +22,9 @@ login = LoginManager(app)
 login.login_view = 'login'
 login.login_message_category = 'danger'
 
+# importing api
+from app.blueprints.api import api
+app.register_blueprint(api)
+
 # import all of the routes and models from the routes and models module in the current folder
 from . import routes, models
